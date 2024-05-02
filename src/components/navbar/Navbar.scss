@@ -1,0 +1,239 @@
+.gpt3__navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.5rem 8rem;
+  .gpt3__navbar-links {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+
+    .gpt3__navbar-links_title {
+      display: flex;
+      flex: 1;
+      justify-content: space-between;
+      font-size: 18px;
+      margin-left: 60px;
+      margin-right: 120px;
+      color: white;
+      text-transform: capitalize;
+      :hover {
+        cursor: pointer;
+      }
+    }
+
+    .gpt3__navbar-links_logo {
+      flex: 0.15;
+      margin-top: 5px;
+      :hover {
+        cursor: pointer;
+      }
+      img {
+        width: 62px;
+        height: 16px;
+      }
+    }
+
+    .gpt3__navbar-links_auth {
+      display: flex;
+      flex: 0.3;
+      justify-content: center;
+      :nth-child(1) {
+        cursor: pointer;
+        background: inherit;
+        border: none;
+        color: white;
+        margin-right: 10px;
+        font-size: 18px;
+      }
+
+      :nth-child(2) {
+        cursor: pointer;
+        background: inherit;
+        border: none;
+        padding: 10px 20px;
+        color: white;
+        font-size: 18px;
+        background-color: #ff4820;
+        border-radius: 5px;
+      }
+    }
+  }
+  .gpt3__navbar-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1360px) {
+  .gpt3__navbar {
+    padding: 3.5rem 4rem;
+    .gpt3__navbar-links {
+      .gpt3__navbar-links_title {
+        margin-left: 40px;
+        margin-right: 80px;
+        font-size: 16px;
+      }
+      .gpt3__navbar-links_logo {
+        img {
+          width: 52px;
+        }
+      }
+      .gpt3__navbar-links_auth {
+        flex: 0.4;
+
+        :nth-child(1) {
+          font-size: 16px;
+        }
+
+        :nth-child(2) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1025px) {
+  .gpt3__navbar {
+    padding: 3.5rem 3rem;
+    .gpt3__navbar-links {
+      .gpt3__navbar-links_title {
+        margin-left: 15px;
+        margin-right: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gpt3__navbar {
+    padding: 3.5rem 1rem;
+    .gpt3__navbar-links {
+      .gpt3__navbar-links_title {
+        margin-left: 10px;
+        margin-right: 20px;
+        font-size: 12px;
+        align-self: center;
+      }
+      .gpt3__navbar-links_logo {
+        img {
+          width: 52px;
+          height: 14px;
+        }
+      }
+      .gpt3__navbar-links_auth {
+        flex: 0.3;
+        :nth-child(1) {
+          font-size: 12px;
+        }
+
+        :nth-child(2) {
+          font-size: 12px;
+          padding: 10px 10px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  .gpt3__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+
+    .gpt3__navbar-menu {
+      margin-left: 1rem;
+      display: flex;
+      flex: 1;
+      margin: 20px;
+      justify-content: flex-end;
+
+      svg {
+        cursor: pointer;
+      }
+    }
+    .gpt3__navbar-links {
+      .gpt3__navbar-links_title {
+        display: none;
+      }
+      .gpt3__navbar-links_auth {
+        display: none;
+      }
+
+      .gpt3__navbar-links_logo {
+        margin: 28px 20px 20px 20px;
+        :hover {
+          cursor: pointer;
+        }
+        img {
+          width: 80px;
+          height: 20px;
+        }
+      }
+    }
+    .gpt3__navbar-menu {
+      margin-left: 1rem;
+      display: flex;
+      position: relative;
+
+      svg {
+        cursor: pointer;
+      }
+    }
+    .gpt3__navbar-menu_container {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      flex-direction: column;
+
+      text-align: end;
+      background: var(--color-footer);
+      padding: 2rem;
+      position: absolute;
+      top: 40px;
+      right: 0;
+      margin-top: 1rem;
+      min-width: 210px;
+      border-radius: 5px;
+      box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+
+      a {
+        margin: 1rem 0;
+      }
+
+      .gpt3__navbar-menu_container-links {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        color: white;
+      }
+
+      .gpt3__navbar-menu_container-links-auth {
+        display: flex;
+        flex: 1;
+        width: 130px;
+        justify-content: space-between;
+        margin-top: 1rem;
+        :nth-child(1) {
+          cursor: pointer;
+          background: inherit;
+          border: none;
+          color: white;
+          font-size: 14px;
+        }
+
+        :nth-child(2) {
+          cursor: pointer;
+          background: inherit;
+          border: none;
+          color: white;
+          font-size: 14px;
+          padding: 10px;
+          background-color: #ff4820;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}
