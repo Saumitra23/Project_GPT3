@@ -1,0 +1,219 @@
+.gpt3__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem 2rem 8rem;
+  .gpt3__header-left_container {
+    .heading-text {
+      flex: 1;
+      font-size: 62px;
+      font-weight: 800;
+      line-height: 75px;
+      margin-top: 6.5rem;
+      letter-spacing: -0.04em;
+    }
+
+    p {
+      font-size: 20px;
+      color: #81afdd;
+      margin-top: 2rem;
+      margin-right: 2rem;
+    }
+
+    form {
+      display: flex;
+      margin-top: 2rem;
+      height: 73px;
+      input {
+        flex: 1;
+        padding-left: 2rem;
+        font-size: 20px;
+        color: #3d6184;
+        border-radius: 5px 0 0 5px;
+        background: #052d56;
+        border: none;
+      }
+      button {
+        flex: 0.5;
+        border-radius: 0 5px 5px 0;
+        border: none;
+        text-transform: capitalize;
+        font-size: 20px;
+        font-weight: 700;
+        color: white;
+        background: #ff4820;
+      }
+    }
+
+    .info-text {
+      display: flex;
+      flex: 1;
+      align-items: center;
+      gap: 20px;
+      margin-top: 37px;
+      transition: all 1s ease-in-out;
+      img {
+        width: 181px;
+        height: 38px;
+        cursor: pointer;
+        transition: all 0.6s ease-in-out;
+        object-fit: cover;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+      .desc {
+        font-size: 12px;
+        font-weight: 500;
+        color: white;
+        transform: scale(1);
+      }
+    }
+  }
+  img {
+    width: 667px;
+    height: 701px;
+  }
+}
+
+@media screen and (max-width: 1360px) {
+  .gpt3__header {
+    padding: 0 2rem 2rem 4rem;
+    .gpt3__header-left_container {
+      .heading-text {
+        font-size: 50px;
+        font-weight: 700;
+        margin-top: 3.5rem;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      form {
+        margin-right: 2rem;
+        height: 50px;
+        input {
+          font-size: 16px;
+        }
+        button {
+          font-size: 16px;
+        }
+      }
+
+      .info-text {
+        gap: 15px;
+        img {
+          width: 130px;
+          height: 25px;
+        }
+      }
+    }
+    img {
+      width: 450px;
+      height: 515px;
+    }
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .gpt3__header {
+    padding: 0 2rem 2rem 4rem;
+    .gpt3__header-left_container {
+      .heading-text {
+        font-size: 40px;
+        margin-top: 2.5rem;
+      }
+
+      form {
+        input {
+          font-size: 14px;
+        }
+        button {
+          font-size: 14px;
+        }
+      }
+    }
+    img {
+      width: 400px;
+      height: 450px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gpt3__header {
+    padding: 0 2rem 2rem 4rem;
+    flex-direction: column-reverse;
+    .gpt3__header-right_container {
+      margin: auto;
+      img {
+        width: 330px;
+        height: 380px;
+      }
+    }
+    .gpt3__header-left_container {
+      .heading-text {
+        font-size: 30px;
+        line-height: 45px;
+        margin-top: 1.5rem;
+      }
+      p {
+        font-size: 14px;
+      }
+      form {
+        height: 40px;
+        input {
+          font-size: 12px;
+        }
+        button {
+          font-size: 12px;
+        }
+      }
+      .info-text {
+        gap: 10px;
+        img {
+          width: 110px;
+          height: 20px;
+        }
+        .desc {
+          font-size: 10px;
+          font-weight: 400;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .gpt3__header {
+    padding: 0 1rem 2rem 1rem;
+    .gpt3__header-right_container {
+      margin: 1.5rem auto;
+      img {
+        width: 200px;
+        height: 250px;
+      }
+    }
+    .gpt3__header-left_container {
+      .heading-text {
+        font-size: 25px;
+        margin-top: 3rem;
+      }
+
+      form {
+        input {
+          padding-left: 0.5rem;
+          font-size: 12px;
+        }
+        button {
+          font-size: 12px;
+        }
+      }
+    }
+    img {
+      width: 400px;
+      height: 450px;
+    }
+  }
+}

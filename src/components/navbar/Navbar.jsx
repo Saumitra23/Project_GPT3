@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import Logo from "../../assets/Logo.svg";
 import "./Navbar.scss";
@@ -19,6 +19,14 @@ const Links = () => {
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      setScreenWidth(window.innerWidth);
+    });
+    return () => window.removeEventListener("resize", {});
+  });
 
   return (
     <div className="gpt3__navbar">
@@ -49,7 +57,7 @@ const Navbar = () => {
           />
         )}
       </div>
-      {toggleMenu && (
+      {toggleMenu && screenWidth < 450 && (
         <div className="gpt3__navbar-menu_container scale-up-center">
           <div className="gpt3__navbar-menu_container-links">
             <Links />

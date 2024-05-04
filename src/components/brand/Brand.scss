@@ -1,0 +1,29 @@
+.gpt3__brand {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: auto;
+  img {
+    width: 71px;
+    height: 24px;
+    align-self: center;
+  }
+
+  :nth-child(1) {
+    margin-top: 4px;
+  }
+
+  :nth-child(2) {
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gpt3__brand {
+    gap: 18px;
+    img {
+      width: 50px;
+      height: 20px;
+    }
+  }
+}

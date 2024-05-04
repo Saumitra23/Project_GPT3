@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: var(--font-family);
+  font-family: var(--font-family);
   background: var(--color-bg);
 }
 
@@ -19,6 +19,15 @@ a {
   /* global 92%+ browsers support */
   background: radial-gradient(
     circle at 3% 25%,
+    rgba(0, 40, 83, 1) 0%,
+    rgba(4, 12, 24, 1) 100%
+  );
+}
+
+.gradient__bg-2 {
+  /* global 92%+ browsers support */
+  background: radial-gradient(
+    circle at 40% 25%,
     rgba(0, 40, 83, 1) 0%,
     rgba(4, 12, 24, 1) 100%
   );
